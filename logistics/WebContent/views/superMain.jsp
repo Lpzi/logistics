@@ -21,25 +21,19 @@
 				<a href="#"  class="easyui-linkbutton" >注销</a>
 			</div>
 		</div>
-		<div region="south" split="false"  style="height:50px;">
-			copyright&copy;中软国际
+		<div region="south" split="false"  style="height:50px;text-align: center;">
+			copyright&copy;项目一组
 		</div>
 		<div data-options="region:'west',split:false" title="系统导航菜单" style="width:200px;">
 			<div class="easyui-accordion" style="width:500px;height:300px;">
 				<div title="用户管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
 					<ul>
 						<li><a href="javascript:void(0)" onclick="addTab('普通用户', 'views/user_info.jsp')">普通用户</a></li>
-						<li><a href="javascript:void(0)" onclick="addTab('商家用户', 'http://www.baidu.com')">商家用户</a></li>
-						<li><a href="#">用户列表</a></li>
-						<li><a href="#">用户列表</a></li>
+						<li><a href="javascript:void(0)" onclick="addTab('站点管理员', 'http://www.baidu.com')">站点管理员</a></li>
+						<li><a href="javascript:void(0)" onclick="addTab('车辆管理员', 'http://www.baidu.com')">车辆管理员</a></li>
 					</ul>
 				</div>
-				<div title="商品管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
-					
-				</div>
-				<div title="订单管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
 				
-				</div>
 			</div>
 		
 		</div>

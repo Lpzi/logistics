@@ -11,12 +11,13 @@
 <link rel="stylesheet" href="resources/jquery-easyui-1.6.10/themes/bootstrap/easyui.css">
 <link rel="stylesheet" href="resources/jquery-easyui-1.6.10/themes/icon.css">
 
-<script type="text/javascript" src="resources/js/userinfo.js"></script>
+<script type="text/javascript" src="resources/js/sendManager.js"></script>
 </head>
 <body>
 	<div class="search">
 		<form id="searchform">
-			<label>用户名字：</label><input class="easyui-textbox" name="userName">			
+			<label>管理员编号：</label><input class="easyui-textbox" name="sendId">	
+			<label>管理员账号：</label><input class="easyui-textbox" name="sendManagerAccount">			
 		</form>
 		<a href="javascript:void(0)" id="searchBtn" class="easyui-linkbutton" data-options="iconCls:'icon-search'">搜索</a>
 		<a href="javascript:void(0)" id="addBtn" class="easyui-linkbutton"  data-options="iconCls:'icon-add'">添加用户</a>
@@ -28,9 +29,9 @@
 			<thead>
 				<tr>
 					<th data-options="field:'ck',checkbox:true"></th>
-					<th data-options="field:'userAccount',width:100">用户编号</th>
-					<th data-options="field:'userPwd',width:80,align:'right'">用户密码</th>
-					<th data-options="field:'userName',width:100">用户名字</th>
+					<th data-options="field:'sendManagerId',width:100">管理员编号</th>
+					<th data-options="field:'sendManagerAccount',width:100">管理员账号</th>
+					<th data-options="field:'sendManagerPwd',width:80,align:'right'">管理员密码</th>
 				</tr>
 			</thead>
 		</table>
@@ -43,13 +44,9 @@
 			<table style="display: inline-block;">
 				<tr>
 					<td><label>账号:</label> </td>
-					<td><input class="easyui-textbox" name="userAccount"> </td>
+					<td><input class="easyui-textbox" name="sendManagerAccount"> </td>
 					<td><label>密码:</label></td>
-					<td><input class="easyui-textbox" name="userPwd"></td>
-				</tr>
-				<tr>
-					<td><label>用户姓名:</label> </td>
-					<td><input class="easyui-textbox" name="userName"> </td>
+					<td><input class="easyui-textbox" name="sendManagerPwd"></td>
 				</tr>
 			</table>
 			<br/>
@@ -65,12 +62,10 @@
 			<input name="userId" id="userId" type="hidden">
 			<table style="display: inline-block;">
 				<tr>
-					<td><label>用户姓名:</label> </td>
-					<td><input class="easyui-textbox" id="realName" name="userName"> </td>
-					<td><label>用户编号:</label> </td>
-					<td><input class="easyui-textbox"  name="userAccount"> </td>
-					<td><label>用户密码:</label></td>
-					<td><input class="easyui-textbox" name="userPwd"></td>
+					<td><label>管理员账号:</label> </td>
+					<td><input class="easyui-textbox"  name="sendManagerAccount"> </td>
+					<td><label>管路员密码:</label></td>
+					<td><input class="easyui-textbox" name="sendManagerPwd"></td>
 				</tr>
 			</table>
 			<br/>

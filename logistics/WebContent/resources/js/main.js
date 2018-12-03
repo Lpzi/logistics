@@ -1,5 +1,4 @@
-$(function(){
-	
+$(function(){	
 })
 function addTab(title, url){
 	if ($('#tabs').tabs('exists', title)){
