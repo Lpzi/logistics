@@ -22,11 +22,21 @@
 				</div>
 				<div style="margin-bottom:20px">
 					<div>用户密码:</div>
-					<input class="easyui-textbox" name="loginPwd" data-options="prompt:'请输入用户密码'" style="width:100%;height:32px">
+					<input class="easyui-textbox" name="loginPwd" type="password" style="width:100%;height:32px">
+				</div>
+				<div style="margin-bottom:20px">
+					<div>用户类型:</div>
+					<select id="area" class="easyui-combobox" style="width:100%">
+                        <option value='1'>超级管理员</option>
+                        <option value='2'>站点管理员</option>
+                        <option value='3'>车辆管理</option>
+                        <option value='4'>普通用户</option>
+                    </select>
 				</div>
 
 				<div>
 					<a href="javascript:void(0);" class="easyui-linkbutton" iconCls="icon-ok" id="login" style="width:100%;height:32px">登录</a>
+					<a href="javascript:void(0);" class="easyui-linkbutton" iconCls="icon-ok" id="register" style="width:100%;height:32px">普通用户注册</a>
 				</div>
 			</div>
 		</form>
